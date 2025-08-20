@@ -223,30 +223,6 @@ The script handles:
 
   
 
-## Performance tips (optional improvements)
-
-  
-
-If you plan to evolve this script:
-
-  
-
-- Use a **thread pool** (`concurrent.futures.ThreadPoolExecutor`) with a sane `max_workers` (e.g., 200–1000) instead of 65k threads.
-
-- Add **arg parsing** with `argparse` (e.g., set timeout, choose port ranges, toggle output file).
-
-- Support **hostnames/IPv6**, **UDP scanning**, and **banner grabbing** for better service detection.
-
-- Add **rate limiting** and a **progress indicator**.
-
-- Consider **retries** or adaptive timeouts for slow networks.
-
-  
-
----
-
-  
-
 ## Safety & responsibility
 
   
